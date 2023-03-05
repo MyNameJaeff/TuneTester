@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <title>Current round</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
     foreach($files as $file){
         $songs[] = $file;
         $songNames[] = trim(str_replace('songs/','',$file));
-        //echo $file." | ".trim(str_replace('songs/','',$file))."<br>";
+        echo $file." | ".trim(str_replace('songs/','',$file))."<br>";
     }
     $song = $songs[rand(0,count($songs)-1)];
     $theSongName = trim(str_replace('songs/','',$song)); $theSongName = trim(str_replace('.mp3','',$song));
