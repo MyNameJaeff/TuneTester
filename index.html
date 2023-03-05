@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tune tester</title>
+</head>
+<body>
+    <h1 id="title">Hello world</h1>
+    <button type="button" id="button" onclick="startGame()">Start</button>
+    <script>
+        function startGame(){
+            document.getElementById("title").innerHTML = "Game has started";
+        }
+        document.getElementById("button").onclick = function(){
+            document.location.href = "game.php";
+        }
+    </script>
+</body>
+</html>
